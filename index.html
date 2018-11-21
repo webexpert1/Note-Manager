@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Note Manager</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h2>Note Manager</h2>
+			<form id="search-note">
+				<input type="text" placeholder="Search note...">
+			</form>
+		</header>
+		<div class="note-list">
+			<ul id="list">
+				<li>
+					<p>First note</p> 
+					<p><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></p>
+					<input class="edit-note" type="text">
+				</li>
+				<li>
+					<p>Second note</p>
+					<p><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></p>
+					<input class="edit-note" type="text">
+				</li>
+				<li>
+					<p>Third note</p>
+					<p><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></p>
+					<input class="edit-note" type="text">
+				</li>
+			</ul>
+		</div>
+		<div id="hide-list">
+		    <label for="hide">Hide notes</label>
+		    <input type="checkbox" id="hide">
+	    </div>
+		<div id="add-notes">
+			<form id="add">
+				<input type="text" placeholder="Add a note.." id="add-input">
+				<input type="submit"  value="Add" id="add-btn">
+				<button type="button" 
+						onclick="document.getElementById('demo').innerHTML = new Date()">
+						See the date	
+				</button>
+				<p id='demo'></p>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
